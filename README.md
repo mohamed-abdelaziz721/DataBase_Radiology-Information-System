@@ -11,7 +11,8 @@
 * [About](#about)
 
 ## About The Project
-This is a Radiology Information System MVP project implementing the core concepts of Database Engineering
+This is a Radiology Information System MVP project implementing the core concepts of Database Engineering.
+User Authentication was used to manage different users. Admin can add new doctors, Technicians, Receptionists to the system and view the work history of each employee. Receptionists can add new or existing patients and assigning their case to a specific doctor and technician with the ability to view previous patient visits and whose patient report was finished . Technician can upload Scans. Doctors then can write the report and the patient will be notified and can view the scan report in his profile.  
 
 ## Toolbox
 
