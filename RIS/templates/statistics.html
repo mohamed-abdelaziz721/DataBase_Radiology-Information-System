@@ -1,0 +1,115 @@
+{% extends "layout.html" %}
+{% block navbar %}
+    <a class="nav-item nav-link" href="{{ url_for('addDoctor') }}">Add Doctor</a>
+    <a class="nav-item nav-link" href="{{ url_for('addTechnician') }}">Add Technician</a>
+    <a class="nav-item nav-link" href="{{ url_for('addReceptionist') }}">Add Receptionist</a>
+    <a class="nav-item nav-link" href="{{ url_for('statistics') }}">Statistics</a>
+    <a class="nav-item nav-link" href="{{ url_for('logout') }}">Logout</a>
+{% endblock navbar %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col md-12">
+            <div class="jumbotron p-3">
+                <h2> User Manual for Statistics Tool <b> IBM Watson</b>
+                    <button type="button" class="btn btn-danger float-right "
+                        onclick=location.href='https://www.youtube.com/watch?v=DPG3T5wgTbc'>View Demo
+                    </button>
+                    
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col md-12">
+            <div class="jumbotron p-3">
+                <h2>IBM Watson <b> Statistical Analysis</b>
+                   
+                    <button type="button" class="btn btn-info float-right "
+                    onclick=location.href='https://eu-gb.dataplatform.cloud.ibm.com/shaper?project_id=3dcb2b33-2506-470c-80b4-e4398c026e3e&dataset_id=0046eab8-4187-4522-a788-9e2d9e27ac94&context=cpdaas'>Start Data Refinery and Visualizing
+                   </button>
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="image-text-right color-lightslategrey">
+        <h5>1.Load Your Generated CSV file into IBM Watson.<h5>
+        <p>Your data will be formated automatically and you have full control to remove and refine your data.<p>
+        <img class="img-fluid" src="{{url_for('static', filename='azozimages/datarefinery.png')}}" > 
+        <div class="image-text-column">
+        </div>
+        </div>
+    </div>
+    <div class="image-text-right color-lightslategrey">
+        <h5>2.From Profile you can view your intial statistics as Bar Charts.<h5>
+        <img class="img-fluid" src="{{url_for('static', filename='azozimages/intialstat.png')}}" > 
+        <div class="image-text-column">
+        </div>
+        </div>
+    </div>
+    <div class="image-text-right color-lightslategrey">
+        <h5>3.You have a full customizable set of operations such as summation, finding maximum & minimum, aggregation, and more.<h5>
+        <img class="img-fluid" src="{{url_for('static', filename='azozimages/operationset.png')}}" > 
+        <div class="image-text-column">
+        </div>
+        </div>
+    </div>
+    <div class="image-text-right color-lightslategrey">
+        <h5>4.Technician Statistics.<h5>
+        <img class="img-fluid" src="{{url_for('static', filename='azozimages/technitionstat.png')}}" > 
+        <div class="image-text-column">
+        </div>
+        </div>
+    </div>
+    <div class="image-text-right color-lightslategrey">
+        <h5>5.Doctor Statistics and finding the most redundant scan type.<h5>
+        <img class="img-fluid" src="{{url_for('static', filename='azozimages/doctor stat.png')}}" > 
+        <div class="image-text-column">
+        </div>
+        </div>
+    </div>
+    <div class="image-text-right color-lightslategrey">
+        <h5>6.Scan Types Pie Chart.<h5>
+        <img class="img-fluid" src="{{url_for('static', filename='azozimages/scansstat.png')}}" > 
+        <div class="image-text-column">
+        </div>
+        </div>
+    </div>
+    <div class="image-text-right color-lightslategrey">
+        <h5>7.Fully custumizabel Graphs.<h5>
+        <img class="img-fluid" src="{{url_for('static', filename='azozimages/graghcustomize.png')}}" > 
+        <div class="image-text-column">
+        </div>
+        </div>
+    </div>
+    <div class="image-text-right color-lightslategrey">
+        <h5>8.Every Gragh you can imagine.<h5>
+        <img class="img-fluid" src="{{url_for('static', filename='azozimages/fullycustomizabel.png')}}" > 
+        <div class="image-text-column">
+        </div>
+        </div>
+    </div>
+    <div class="image-text-right color-lightslategrey">
+        <h5>9.Patient Age Statistics.<h5>
+        <img class="img-fluid" src="{{url_for('static', filename='azozimages/patientsagestat.png')}}" > 
+        <div class="image-text-column">
+        </div>
+        </div>
+    </div>
+    <div class="image-text-right color-lightslategrey">
+        <h5>10.patients Gender Statistics.<h5>
+        <img class="img-fluid" src="{{url_for('static', filename='azozimages/gender stat.png')}}" > 
+        <div class="image-text-column">
+        </div>
+        </div>
+    </div>
+   
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        $('.mydatatable').DataTable({
+            lengthMenu: [[5, 10, 20, -1], [5, 10, 20, "All"]]
+        });
+    </script>
+{% endblock scripts %}

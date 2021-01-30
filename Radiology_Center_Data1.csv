@@ -1,0 +1,8 @@
+Patient_Name,Patient_Age,Patient_Gender,Scan_Date,Scan_Type,Scan_Fees,Receptionist_Name,Receptionist_Salary,Receptionist_Gender,Receptionist_Age,Technician_Name,Technician_Salary,Technician_Gender,Technician_Age,Doctor_Name,Doctor_Speciality,Doctor_Salary,Doctor_Gender,Doctor_Age
+shady mohamed,22,male,2021-01-16,MRI brain,1000 L.E.,Ruby Hussain,3000,female,19,Omar Amin,4000,male,31,Mohamed Ahmed,MRI radiologist,10000,male,21
+shady mohamed,22,male,2021-01-16,X-ray arm,100 L.E.,Ruby Hussain,3000,female,19,Omar Amin,4000,male,31,Manar Mahmoud,Mammography Radiologist,7000,0,50
+Mahmoud Gediana,21,male,2021-01-16,X-ray Chest,300 L.E.,Ruby Hussain,3000,female,19,Omar Amin,4000,male,31,Manar Mahmoud,Mammography Radiologist,7000,0,50
+Mahmoud Gediana,21,male,2021-01-16,Leg CT,500,Ruby Hussain,3000,female,19,Omar Amin,4000,male,31,Seyam salah,CT Radiologist,6000,male,41
+Salah Ayman,33,male,2021-01-16,X-ray Chest,300,Ruby Hussain,3000,female,19,Omar Amin,4000,male,31,Manar Mahmoud,Mammography Radiologist,7000,0,50
+Mai Ahmed,20,female,2021-01-16,mammography,500,Ruby Hussain,3000,female,19,Omar Amin,4000,male,31,Manar Mahmoud,Mammography Radiologist,7000,0,50
+Seyam ahmed,21,male,2021-01-17,MRI brain,1000,Ruby Hussain,3000,female,19,Omar Amin,4000,male,31,Manar Mahmoud,Mammography Radiologist,7000,0,50
